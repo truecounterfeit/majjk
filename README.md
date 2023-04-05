@@ -5,7 +5,7 @@ Our solution essentially replaces the need for this app, using Stripe as the sub
 
 ## ARCHITECTURE
 - **Stencil** (for local development)
-- **Customized** Cornerstone theme (customer facing front end)
+- **Customized** Cornerstone theme (customer facing front end) https://overdose-america-sandbox-for-kelati-andemichael.mybigcommerce.com/ Preview Code: prq6h0b7wm
     - Customization to product detail template/js where we pull in locations via GraphQL for the customer to choose from
     - Customization to checkout.html template to create the consignments for each order line item
 - **Netlify Serverless Functions** (middleware connector between BC and Stripe) - https://github.com/JacksonBey/majjk-netlify
