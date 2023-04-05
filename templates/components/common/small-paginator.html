@@ -1,0 +1,38 @@
+<div class="pagination">
+    <ul class="pagination-list pagination-list--small">
+        {{#if previous}}
+            <li class="pagination-item pagination-item--previous">
+                <a class="pagination-link" href="{{previous}}" data-faceted-search-facet>
+                    <i class="icon" aria-hidden="true">
+                        <svg>
+                            <use href="#icon-chevron-left"></use>
+                        </svg>
+                    </i>
+                    {{lang 'common.previous'}}
+                </a>
+            </li>
+        {{/if}}
+
+        {{#if this.links.length}}
+        {{#each this.links}}
+            <a class="pagination-link" href="{{this.link}}">
+                <li class="pagination-item">{{this.number}}</li>
+            </a>
+        {{/each}}
+        {{/if}}
+
+        {{#if next}}
+            <li class="pagination-item pagination-item--next">
+                <a class="pagination-link" href="{{next}}" data-faceted-search-facet>
+                    {{lang 'common.next'}}
+                    <i class="icon" aria-hidden="true">
+                        <svg>
+                            <use href="#icon-chevron-right"></use>
+                        </svg>
+                    </i>
+                </a>
+            </li>
+        {{/if}}
+    </ul>
+</div>
+
